@@ -1,0 +1,23 @@
+Admin_master
+admin_id,username,email_id,password,datetime
+
+    student_master
+    u_id,name,email_id,e_no,phone_no,de_id,sem_id,passowrd,datetime
+
+faculty_master
+f_id,f_name,email_id,phone_no,de_id,passowrd,datetime
+
+department
+de_id,de_name
+
+sem_master
+sem_id,sem_no
+
+subject_master
+sub_id,sub_name,de_id,sem_id
+
+faculty_subject
+fs_id,f_id,sem_id,de_id
+
+otp_master
+no,email_id,otp,status

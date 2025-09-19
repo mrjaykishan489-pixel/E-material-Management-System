@@ -1,0 +1,2 @@
+1) internet on
+2) import database form database folder
