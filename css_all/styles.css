@@ -1,0 +1,158 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3B82F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+    width: 95%;
+    height: auto;
+}
+
+h2 {
+    text-align: start;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #3B82F6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#condition {
+    width: fit-content;
+}
+
+
+/*label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+label input {
+    margin-right: 10px;
+}*/
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    input,
+    select,
+    button {
+        padding: 8px;
+        margin: 8px 0;
+    }
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    label {
+        font-size: 12px;
+    }
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 18px;
+    }
+    button {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+
+/*Login Css*/
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.options a {
+    color: #1A73E8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+
+/*Forget Password*/
+
+#btnforget {
+    margin-top: 3rem;
+}
