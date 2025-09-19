@@ -1,0 +1,133 @@
+.show-matirial {
+    width: 60%;
+    height: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+/* Dropdown and Button Styling */
+form select,
+form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form select {
+  width: 200px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+
+
+form button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.show-pdf {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.show-pdf table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.show-pdf tr {
+  border-bottom: 1px solid #000000;
+  transition: background-color 0.3s ease;
+}
+
+.show-pdf tr:hover {
+  background-color: #f2efef;
+}
+
+.show-pdf td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.show-pdf td:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+.show-pdf td img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.show-pdf td:nth-child(2) {
+  font-weight: 600;
+  color: #333;
+}
+
+.show-pdf td:nth-child(3) {
+  color: #666;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.show-pdf td a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #4CAF50;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.show-pdf td a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+
+
+#pdfModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+#pdfModal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+}
