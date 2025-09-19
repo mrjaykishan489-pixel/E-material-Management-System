@@ -1,0 +1,217 @@
+.profile-card {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: max-height 0.5s;
+    z-index: 1000;
+}
+
+.profile-card.open-profile {
+    max-height: 480px;
+}
+
+.profile-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-department {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.profile-details {
+    padding: 20px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.detail-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #4b49ac;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.detail-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.detail-label {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.detail-value {
+    font-weight: 600;
+}
+
+
+/* Logout Button Styles */
+
+.logout-container {
+    padding: 0 20px 20px 20px;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #ff0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+.logout-btn:active {
+    transform: translateY(0);
+}
+
+.logout-icon {
+    font-size: 1.2rem;
+}
+
+.notification-card {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 60px;
+    background-color: #fff;
+    border: 0.2px solid #000000;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    padding-top: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notification-card select,
+.notification-card button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-card select {
+    width: 200px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.notification-card button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-card button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notification-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notification-card td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.icons {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icons.correct {
+    color: green;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.icons.wrong {
+    color: red;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.correct:hover {
+    background-color: green;
+    color: #ddd;
+}
+
+.wrong:hover {
+    background-color: red;
+    color: #ddd;
+}
