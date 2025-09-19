@@ -1,0 +1,38 @@
+
+
+.show-student{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Action Links */
+  .show-student  a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-student a:first-child {
+    background-color: #28a745; /* Green for View */
+  }
+  
+  .show-student a:first-child:hover {
+    background-color: #218838;
+  }
+  
+  .show-student a:last-child {
+    background-color: #dc3545; /* Red for Delete */
+  }
+  
+  .show-student a:last-child:hover {
+    background-color: #c82333;
+  }
+  
